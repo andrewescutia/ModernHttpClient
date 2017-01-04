@@ -16,8 +16,8 @@ using ModernHttpClient.Foundation;
 using Foundation;
 using Security;
 #else
-using MonoTouch.Foundation;
-using MonoTouch.Security;
+using Foundation;
+using Security;
 using System.Globalization;
 #endif
 

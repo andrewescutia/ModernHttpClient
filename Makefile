@@ -6,7 +6,7 @@ all: ModernHttpClient.iOS.dll ModernHttpClient.iOS64.dll ModernHttpClient.Androi
 
 package: ModernHttpClient.iOS.dll ModernHttpClient.iOS64.dll ModernHttpClient.Android.dll ModernHttpClient.Portable.dll
 	mono vendor/nuget/NuGet.exe pack ./ModernHttpClient.nuspec
-	mv modernhttpclient*.nupkg ./build/
+	mv Amc.modernhttpclient*.nupkg ./build/
 
 ModernHttpClient.Android.dll: 
 	$(MDTOOL) build -c:Release ./src/ModernHttpClient/ModernHttpClient.Android.csproj
